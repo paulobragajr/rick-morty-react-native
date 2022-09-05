@@ -1,4 +1,5 @@
 import styled from 'styled-components/native';
+import {RMColors} from '../../assets/RMColors';
 
 export const DetailContainer = styled.View`
   align-items: center;
@@ -15,7 +16,7 @@ export const SubContainer = styled.View`
   margin-top: 20px;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
-  background-color: #1a1a1a;
+  background-color: ${RMColors.themes.cellBackgroundColoSubContainer};
 `;
 
 export const CharacterImage = styled.Image.attrs({resizeMode: 'contain'})`
@@ -32,18 +33,19 @@ export const TextName = styled.Text`
   font-weight: bold;
   margin-bottom: 10px;
   margin-top: 10px;
-  color: white;
+  color: ${RMColors.themes.textTitle};
 `;
 
 export const TextDescription = styled.Text`
   text-align: center;
   font-size: 19px;
-  color: white;
+  color: ${RMColors.themes.textTitle};
 `;
 
 export const TextInfo = styled.Text`
   text-align: center;
   font-size: 12px;
+  color: ${RMColors.themes.textTitle};
 `;
 
 export const ViewDescription = styled.View`

@@ -1,10 +1,11 @@
 import styled from 'styled-components/native';
+import {RMColors} from '../../assets/RMColors';
 
 export const Container = styled.View`
   margin-top: 20px;
   height: 80px;
   border-radius: 10px;
-  background-color: 'rgba(255, 255, 255, 0.15)';
+  background-color: ${RMColors.themes.cellBackgroundColor};
   width: 100%;
 `;
 
@@ -15,9 +16,7 @@ export const ContainerElement = styled.View`
   width: 100%;
 `;
 
-export const ImageCharacter = styled.Image.attrs({
-  // borderColor: '#ffffffff',
-})`
+export const ImageCharacter = styled.Image.attrs({})`
   margin-left: 15px;
   border-radius: 50px;
   border-width: 1px;
@@ -31,5 +30,5 @@ export const TextName = styled.Text`
   text-align: center;
   font-size: 19px;
   margin-bottom: 10px;
-  color: #ffffffff;
+  color: ${RMColors.themes.textTitle};
 `;

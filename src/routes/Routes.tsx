@@ -12,10 +12,10 @@ import 'react-native-gesture-handler';
 import * as React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
-import {Colors} from 'react-native/Libraries/NewAppScreen';
 
 import Home from '../page/home/Home.screen';
 import DetailCharacter from '../page/detail/DetailCharacter.screen';
+import {RMColors} from '../assets/RMColors';
 
 const Stack = createStackNavigator();
 
@@ -33,9 +33,9 @@ const Routes = () => {
           component={DetailCharacter}
           options={{
             title: '',
-            headerTintColor: '#fff',
+            headerTintColor: RMColors.themes.textTitle,
             headerStyle: {
-              backgroundColor: Colors.black,
+              backgroundColor: RMColors.themes.backgroundColor,
             },
           }}
         />
